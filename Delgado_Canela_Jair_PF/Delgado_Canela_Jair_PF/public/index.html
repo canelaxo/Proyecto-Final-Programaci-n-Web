@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caricaturas</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <img src="/img/banner.png" alt="Banner de caricaturas" class="banner" />
+      <h1>¡Bienvenido al mejor blog sobre Caricaturas!</h1>
+      <p>Explora, registra y visualiza las caricaturas de nuestra infancia.</p>
+    </header>
+
+    <!-- Botón principal -->
+    <div style="text-align: center; margin-top: 20px">
+      <button type="button" id="btnCaricaturas">
+        📃 Mostrar Lista de Caricaturas
+      </button>
+    </div>
+
+    <!-- Lista de caricaturas -->
+    <div id="listaCaricaturas">
+      <h2>📺 Caricaturas registradas</h2>
+      <div id="contenedorLista"></div>
+    </div>
+    <br />
+
+    <!-- Mostrar una caricatura individual -->
+    <div id="caricaturaIndividual">
+      <h3>🔍 Detalle de caricatura:</h3>
+      <div id="contenedorCaricatura"></div>
+    </div>
+    <br />
+
+    <!-- Formulario para registrar una nueva caricatura -->
+    <div id="nuevaCaricatura">
+      <h2>📝 Registrar nueva caricatura</h2>
+      <div id="contenedorFormulario">
+        <form id="formularioCaricatura">
+          <div class="inputDiv">
+            <label for="titulo" class="labelInput">Título:</label>
+            <input type="text" id="titulo" name="titulo" required />
+          </div>
+          <div class="inputDiv">
+            <label for="descripcion" class="labelInput">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required />
+          </div>
+          <div class="inputDiv">
+            <label for="creador" class="labelInput">Creador:</label>
+            <input type="text" id="creador" name="creador" required />
+          </div>
+          <div class="inputDiv">
+            <label for="añoCreacion" class="labelInput">Año de creación:</label>
+            <input
+              type="number"
+              id="añoCreacion"
+              name="añoCreacion"
+              min="1900"
+              max="2100"
+              required
+            />
+          </div>
+          <div class="inputDiv">
+            <label for="lanzamiento" class="labelInput"
+              >Fecha de lanzamiento:</label
+            >
+            <input type="date" id="lanzamiento" name="lanzamiento" />
+          </div>
+          <div style="text-align: center">
+            <button type="submit">✅ Guardar caricatura</button>
+          </div>
+        </form>
+      </div>
+      <div id="mensajeRegistro"></div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer
+      style="text-align: center; padding: 15px; background: #222; color: #fff"
+    >
+      <p>&copy; 2026 Jair Canela - Proyecto de caricaturas</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

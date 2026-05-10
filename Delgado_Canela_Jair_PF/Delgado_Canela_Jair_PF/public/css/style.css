@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.encabezado {
+  text-align: center;
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  border-bottom: 4px solid #005fa3;
+}
+
+.encabezado h1 {
+  margin: 15px 0 10px;
+  font-size: 28px;
+}
+
+.encabezado p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Botón principal */
+#btnCaricaturas {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btnCaricaturas:hover {
+  background-color: #005fa3;
+}
+
+/* Contenedores de secciones */
+#listaCaricaturas,
+#caricaturaIndividual,
+#nuevaCaricatura {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+.inputDiv {
+  margin-bottom: 15px;
+}
+
+.labelInput {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Mensajes */
+#mensajeRegistro {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* Listado */
+#contenedorLista {
+  margin-top: 10px;
+}
+
+.caricatura-item {
+  background-color: #f0f8ff;
+  border-left: 5px solid #0077cc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
